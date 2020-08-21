@@ -8,9 +8,7 @@
   $todosQuery->execute([ 'username' => 'user'.$_SESSION['user_id'] ]); 
   $todos = $todosQuery->rowCount() ? $todosQuery : []; 
 
-  // foreach ($todos as $todo) {
-  //  echo $todo['name'], '<br>';
-  // }
+  
 
 ?>
 
@@ -27,6 +25,7 @@
     <div class="list">
       <h1>Todos</h1>
 
+      <?php echo "Developed by Madhav while 💤" ?>
       <?php if(!empty($todos)): ?>
     
       <ul class="todos">
